@@ -1,17 +1,35 @@
 import React from 'react';
-import possibilityImage from '../../assets/possibility.png';
 import './possibility.css';
+import hittalokal from '../../assets/hittalokal.png';
+import valjtider from '../../assets/valjtider.png';
+import besked from '../../assets/besked.png';
+import borja from '../../assets/borja.png';
 
 const Possibility = () => (
-  <div className="gpt3__possibility section__padding" id="possibility">
-    <div className="gpt3__possibility-image">
-      <img src={possibilityImage} alt="possibility" />
-    </div>
+  <div className="gpt3__possibility section__padding">
+    
     <div className="gpt3__possibility-content">
-      <h4>Request Early Access to Get Started</h4>
-      <h1 className="gradient__text">The possibilities are <br /> beyond your imagination</h1>
-      <p>Yet bed any for travelling assistance indulgence unpleasing. Not thoughts all exercise blessing. Indulgence way everything joy alteration boisterous the attachment. Party we years to order allow asked of.</p>
-      <h4>Request Early Access to Get Started</h4>
+      <h1 className="gradient__text">Så fungerar Vakansa</h1>
+      <p>Vakansa ser till att skapa nya möjligheter att använda byggnader och lokaler genom att identifiera tidsvakanser</p>
+    </div>
+    <div className='icons'>
+      <div className='icon'>
+        <img src={hittalokal} />
+        <p>Sök efter lokal</p>
+      </div>
+
+      <div className='icon'>
+        <img src={valjtider} />
+        <p>Välj de tider du är intresserad av att hyra</p>
+      </div>
+      <div className='icon'>
+      <img src={besked} />
+      <p>Vänta in besked från oss & gå på visning</p>
+      </div>
+      <div className='icon'>
+      <img src={borja} />
+      <p>Nu kan du börja använda lokalen!</p>
+      </div>
     </div>
   </div>
 );

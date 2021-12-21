@@ -1,27 +1,49 @@
 import React from 'react';
 import people from '../../assets/people.png';
-import ai from '../../assets/ai.png';
+import yeah from '../../assets/yeah.png';
 import './header.css';
 
 const Header = () => (
   <div className="gpt3__header section__padding" id="home">
     <div className="gpt3__header-content">
-      <h1 className="gradient__text">Let&apos;s Build Something amazing with GPT-3 OpenAI</h1>
-      <p>Yet bed any for travelling assistance indulgence unpleasing. Not thoughts all exercise blessing. Indulgence way everything joy alteration boisterous the attachment. Party we years to order allow asked of.</p>
+      <h1 className="gradient__text">Dela tomma lokaler med Vakansa</h1>
+      <p>och bygg ett mer hållbart samhälle</p>
 
+      <h2 className="gradient__text">Var söker ni?</h2>
       <div className="gpt3__header-content__input">
-        <input type="email" placeholder="Your Email Address" />
-        <button type="button">Get Started</button>
+        {/* <input type="email" placeholder="Your Email Address" /> */}
+        <button type="button">Stockholm</button>
+        <button type="button">Göteborg</button>
+        <button type="button">Uppsala</button>
+        <button type="button">Välj kommun</button>
       </div>
 
-      <div className="gpt3__header-content__people">
+      <h2 className="gradient__text">Typ av lokal</h2>
+      <div className="gpt3__header-content__input">
+        <button type="button">Kontorslokal</button>
+        <button type="button">Samlingslokal</button>
+        <button type="button">Idrottshall</button>
+        <button type="button">Alla lokaler</button>
+      </div>
+
+      <h2 className="gradient__text">När?</h2>
+      <div className="gpt3__header-content__input">
+        <button type="button">Idag</button>
+        <button type="button">Imorgon</button>
+        <button type="button">Välj datum</button>
+      </div>
+
+
+      {/* <div className="gpt3__header-content__people">
         <img src={people} />
         <p>1,600 people requested access a visit in last 24 hours</p>
-      </div>
+      </div> */}
     </div>
 
+    
+
     <div className="gpt3__header-image">
-      <img src={ai} />
+      <img src={yeah} />
     </div>
   </div>
 );
